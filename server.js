@@ -1,15 +1,12 @@
 const http = require('http');
-    static = require('node-static');
-    file = new static.Server('.')
-const port = '3000';
- host = '127.0.0.1'
+const host = 'localhost';
+const port = 8000;
 
-http.createServer(function(request, response){
-
-    request.addListener('end', function(){
-        file.serve(request, response)
-    }).resume();
-
-}).listen(port, host, function(){
-    console.log('Server running at http://' + host + ':' + port)
+const requestListener = function (req, res) {
+    res.writeHead(200);
+    res.end("My first server!");
+};
+const server = http.createServer(requestListener);
+server.listen(port, host, () => {
+    console.log(`Server is running on http://${host}:${port}`);
 });

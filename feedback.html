@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/feedback.css">
+</head>
+<body>
+    <div class="background">
+        <div class="form-background" id="formbackgr">
+            <h1>Feedback survey</h1>
+            <p>Help us improve our company by completing this survey</p>
+                <!-- <label for="name">First name:</label> -->
+            <input type="text" id="name" placeholder="First name">
+            <!-- <label for="surname">Last Name:</label> -->
+            <input type="text" id="surname" placeholder="Last name">
+            <!-- <label for="email">Email:</label> -->
+            <input type="text" id="email" placeholder="Email">
+            <h3>What services did you use?</h3>
+            <div class="firstcheck">
+                <div class="purchasing">
+                    <label for="ouritems">purchasing items made by us</label>
+                <input type="checkbox" name="services" id="ouritems">
+                </div>
+                <div class="purchasing">
+                    <label for="cartuning">car tuning shop services</label>
+                <input type="checkbox" name="services" id="cartuning">
+                </div>
+            </div>
+            <button id="continue">Continue</button>
+        </div>
+        <div class="form-background1" id="formbackgr1">
+            <table class="survey1" cellspacing="0">
+                <tr>
+                    <th></th>
+                    <th class="assessing">Highly satisfied</th>
+                    <th class="assessing">Safistied</th>
+                    <th class="assessing">Neither satisfies nor Dissatisfied</th>
+                    <th class="assessing">Dissatisfies</th>
+                    <th class="assessing">Highly dissatisfied</th>
+                </tr>
+                <tr class="dark ">
+                    <th>The quality of gearboxes</th>
+                    <th><input type="radio" name="gearqual" id=""></th>
+                    <th><input type="radio" name="gearqual" id=""></th>
+                    <th><input type="radio" name="gearqual" id=""></th>
+                    <th><input type="radio" name="gearqual" id=""></th>
+                    <th><input type="radio" name="gearqual" id=""></th>
+                </tr>
+                <tr class="">
+                    <th>Speed of delivery</th>
+                    <th><input type="radio" name="speed" id=""></th>
+                    <th><input type="radio" name="speed" id=""></th>
+                    <th><input type="radio" name="speed" id=""></th>
+                    <th><input type="radio" name="speed" id=""></th>
+                    <th><input type="radio" name="speed" id=""></th>
+                </tr>
+                <tr class="dark ">
+                    <th>Assembling quality</th>
+                    <th><input type="radio" name="assembling" id=""></th>
+                    <th><input type="radio" name="assembling" id=""></th>
+                    <th><input type="radio" name="assembling" id=""></th>
+                    <th><input type="radio" name="assembling" id=""></th>
+                    <th><input type="radio" name="assembling" id=""></th>
+                </tr>
+                <tr class="">
+                    <th>Price for gearboxes</th>
+                    <th><input type="radio" name="assemblingprice" id=""></th>
+                    <th><input type="radio" name="assemblingprice" id=""></th>
+                    <th><input type="radio" name="assemblingprice" id=""></th>
+                    <th><input type="radio" name="assemblingprice" id=""></th>
+                    <th><input type="radio" name="assemblingprice" id=""></th>
+                </tr>
+                <tr class="dark ">
+                    <th>Price for sparing parts</th>
+                    <th><input type="radio" name="adddetprice" id=""></th>
+                    <th><input type="radio" name="adddetprice" id=""></th>
+                    <th><input type="radio" name="adddetprice" id=""></th>
+                    <th><input type="radio" name="adddetprice" id=""></th>
+                    <th><input type="radio" name="adddetprice" id=""></th>
+                </tr>
+            </table>
+            <textarea name="comments" id="" maxlength="800" placeholder="Here you can add some comments*"></textarea>
+            <button class="sendfeedbut" onclick="feedback_sendind()" id="feedsend1">Send feedback</button>
+        </div>
+        <div class="form-background2"  id="formbackgr2">
+            <table class="survey1" cellspacing="0">
+                <tr>
+                    <th></th>
+                    <th class="assessing">Highly satisfied</th>
+                    <th class="assessing">Safistied</th>
+                    <th class="assessing">Neither satisfies nor Dissatisfied</th>
+                    <th class="assessing">Dissatisfies</th>
+                    <th class="assessing">Highly dissatisfied</th>
+                </tr>
+                <tr class="dark ">
+                    <th>Customer service</th>
+                    <th><input type="radio" name="customservice" id=""></th>
+                    <th><input type="radio" name="customservice" id=""></th>
+                    <th><input type="radio" name="customservice" id=""></th>
+                    <th><input type="radio" name="customservice" id=""></th>
+                    <th><input type="radio" name="customservice" id=""></th>
+                </tr>
+                <tr class="">
+                    <th>Shop location</th>
+                    <th><input type="radio" name="shoploc" id=""></th>
+                    <th><input type="radio" name="shoploc" id=""></th>
+                    <th><input type="radio" name="shoploc" id=""></th>
+                    <th><input type="radio" name="shoploc" id=""></th>
+                    <th><input type="radio" name="shoploc" id=""></th>
+                </tr>
+                <tr class="dark">
+                    <th>Shop interior</th>
+                    <th><input type="radio" name="shopinterior" id=""></th>
+                    <th><input type="radio" name="shopinterior" id=""></th>
+                    <th><input type="radio" name="shopinterior" id=""></th>
+                    <th><input type="radio" name="shopinterior" id=""></th>
+                    <th><input type="radio" name="shopinterior" id=""></th>
+                </tr>
+                <tr class=" ">
+                    <th>Prices for goods</th>
+                    <th><input type="radio" name="goodsprice" id=""></th>
+                    <th><input type="radio" name="goodsprice" id=""></th>
+                    <th><input type="radio" name="goodsprice" id=""></th>
+                    <th><input type="radio" name="goodsprice" id=""></th>
+                    <th><input type="radio" name="goodsprice" id=""></th>
+                </tr>
+                <tr class="dark">
+                    <th>Price for services</th>
+                    <th><input type="radio" name="serviceprice" id=""></th>
+                    <th><input type="radio" name="serviceprice" id=""></th>
+                    <th><input type="radio" name="serviceprice" id=""></th>
+                    <th><input type="radio" name="serviceprice" id=""></th>
+                    <th><input type="radio" name="serviceprice" id=""></th>
+                </tr>
+                <tr class=" ">
+                    <th>Quality of goods</th>
+                    <th><input type="radio" name="goodsquality" id=""></th>
+                    <th><input type="radio" name="goodsquality" id=""></th>
+                    <th><input type="radio" name="goodsquality" id=""></th>
+                    <th><input type="radio" name="goodsquality" id=""></th>
+                    <th><input type="radio" name="goodsquality" id=""></th>
+                </tr>
+                <tr class="dark">
+                    <th>Quality of services</th>
+                    <th><input type="radio" name="servicequality" id=""></th>
+                    <th><input type="radio" name="servicequality" id=""></th>
+                    <th><input type="radio" name="servicequality" id=""></th>
+                    <th><input type="radio" name="servicequality" id=""></th>
+                    <th><input type="radio" name="servicequality" id=""></th>
+                </tr>
+            </table>
+            <textarea name="comments" id="" maxlength="800" placeholder="Here you can add some comments*"></textarea>
+            <button class="sendfeedbut" onclick='feedback_sendind()' id="feedsend2">Send feedback</button>
+        </div>
+        <div class="form-background3"  id="formbackgr3">
+            <table class="survey1" cellspacing="0">
+                <table class="survey1" cellspacing="0">
+                    <tr>
+                        <th></th>
+                        <th class="assessing">Highly satisfied</th>
+                        <th class="assessing">Safistied</th>
+                        <th class="assessing">Neither satisfies nor Dissatisfied</th>
+                        <th class="assessing">Dissatisfies</th>
+                        <th class="assessing">Highly dissatisfied</th>
+                    </tr>
+                    <tr class="dark ">
+                        <th>The quality of gearboxes</th>
+                        <th><input type="radio" name="gearqual" id=""></th>
+                        <th><input type="radio" name="gearqual" id=""></th>
+                        <th><input type="radio" name="gearqual" id=""></th>
+                        <th><input type="radio" name="gearqual" id=""></th>
+                        <th><input type="radio" name="gearqual" id=""></th>
+                    </tr>
+                    <tr class="">
+                        <th>Speed of delivery</th>
+                        <th><input type="radio" name="speed" id=""></th>
+                        <th><input type="radio" name="speed" id=""></th>
+                        <th><input type="radio" name="speed" id=""></th>
+                        <th><input type="radio" name="speed" id=""></th>
+                        <th><input type="radio" name="speed" id=""></th>
+                    </tr>
+                    <tr class="dark ">
+                        <th>Assembling quality</th>
+                        <th><input type="radio" name="assembling" id=""></th>
+                        <th><input type="radio" name="assembling" id=""></th>
+                        <th><input type="radio" name="assembling" id=""></th>
+                        <th><input type="radio" name="assembling" id=""></th>
+                        <th><input type="radio" name="assembling" id=""></th>
+                    </tr>
+                    <tr class="">
+                        <th>Price for gearboxes</th>
+                        <th><input type="radio" name="assemblingprice" id=""></th>
+                        <th><input type="radio" name="assemblingprice" id=""></th>
+                        <th><input type="radio" name="assemblingprice" id=""></th>
+                        <th><input type="radio" name="assemblingprice" id=""></th>
+                        <th><input type="radio" name="assemblingprice" id=""></th>
+                    </tr>
+                    <tr class="dark ">
+                        <th>Price for sparing parts</th>
+                        <th><input type="radio" name="adddetprice" id=""></th>
+                        <th><input type="radio" name="adddetprice" id=""></th>
+                        <th><input type="radio" name="adddetprice" id=""></th>
+                        <th><input type="radio" name="adddetprice" id=""></th>
+                        <th><input type="radio" name="adddetprice" id=""></th>
+                    </tr>
+                <tr class=" ">
+                    <th>Customer service</th>
+                    <th><input type="radio" name="customservice" id=""></th>
+                    <th><input type="radio" name="customservice" id=""></th>
+                    <th><input type="radio" name="customservice" id=""></th>
+                    <th><input type="radio" name="customservice" id=""></th>
+                    <th><input type="radio" name="customservice" id=""></th>
+                </tr>
+                <tr class="dark">
+                    <th>Shop location</th>
+                    <th><input type="radio" name="shoploc" id=""></th>
+                    <th><input type="radio" name="shoploc" id=""></th>
+                    <th><input type="radio" name="shoploc" id=""></th>
+                    <th><input type="radio" name="shoploc" id=""></th>
+                    <th><input type="radio" name="shoploc" id=""></th>
+                </tr>
+                <tr class=" ">
+                    <th>Prices for goods</th>
+                    <th><input type="radio" name="goodsprice" id=""></th>
+                    <th><input type="radio" name="goodsprice" id=""></th>
+                    <th><input type="radio" name="goodsprice" id=""></th>
+                    <th><input type="radio" name="goodsprice" id=""></th>
+                    <th><input type="radio" name="goodsprice" id=""></th>
+                </tr>
+                <tr class="dark">
+                    <th>Price for services</th>
+                    <th><input type="radio" name="serviceprice" id=""></th>
+                    <th><input type="radio" name="serviceprice" id=""></th>
+                    <th><input type="radio" name="serviceprice" id=""></th>
+                    <th><input type="radio" name="serviceprice" id=""></th>
+                    <th><input type="radio" name="serviceprice" id=""></th>
+                </tr>
+                <tr class=" ">
+                    <th>Quality of goods</th>
+                    <th><input type="radio" name="goodsquality" id=""></th>
+                    <th><input type="radio" name="goodsquality" id=""></th>
+                    <th><input type="radio" name="goodsquality" id=""></th>
+                    <th><input type="radio" name="goodsquality" id=""></th>
+                    <th><input type="radio" name="goodsquality" id=""></th>
+                </tr>
+                <tr class="dark">
+                    <th>Quality of services</th>
+                    <th><input type="radio" name="servicequality" id=""></th>
+                    <th><input type="radio" name="servicequality" id=""></th>
+                    <th><input type="radio" name="servicequality" id=""></th>
+                    <th><input type="radio" name="servicequality" id=""></th>
+                    <th><input type="radio" name="servicequality" id=""></th>
+                </tr>
+            </table>
+            <div class="textarea-button">
+                <textarea name="comments" id="comments3" maxlength="800" placeholder="Here you can add some comments*"></textarea>
+                <button class="sendfeedbut1" onclick='feedback_sendind()' id="feedsend3">Send feedback</button>
+            </div>
+        </div>
+        <div class="gratitude" id="gratitude_page">
+            <h1>Thank you for your feedback!</h1>
+            <p class="gratitude_text">Dear customer, thank you very much for your feedback! Your input is incredibly important to us, and we truly appreciate the time and effort you dedicated to sharing your thoughts. <br>
+                Your insights play a crucial role in helping us understand how we can better serve you and improve our services. We are committed to delivering the best experience possible, and your feedback is an integral part of that journey. Wishing you a wonderful day ahead!
+            </p>
+            <a href="./main_page.html">Back to the main page</a>
+        </div>
+    </div>
+<script src="./feedback.js"></script>
+</body>
+</html>

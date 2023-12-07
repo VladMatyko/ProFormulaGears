@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/application.css">
+</head>
+<body>
+    <div class="background">
+        <div class="form" id="form">
+            <div class="form1">
+                <div class="title">
+                    <h1>Sign up</h1>
+                </div>
+                <div id="firstpage">
+                    <label for="fname" class="question1" id="fnamelab">First name:</label>
+                    <input type="text" class="question1" id="fname">
+                    <label for="lname" class="question1" id="lnamelab">Last name:</label>
+                    <input type="text" class="question1" id="lname">
+                    <label for="mail" class="question1" id="maillab">Email:</label>
+                    <input type="text" class="question1" id="mail">
+                    <label for="phonenumb" class="question1" id="phonenumblab">Phone number:</label>
+                    <input type="text" class="question1" id="phonenumb">
+                    <div class="but">
+                        <button class="infosend" id="sendinfo">Continue</button>
+                    </div>
+                </div>
+                <div id="secondpage">
+                    <label for="adress" class="question2" id="adresslab">Building adress:</label>
+                    <input type="text" class="question2" id="adress">
+                    <label for="postcode" class="question2" id="postcodelab">Postal code:</label>
+                    <input type="text" class="question2" id="postcode">
+                    <label for="town" class="question2" id="townlab">Town:</label>
+                    <input type="text" class="question2" id="town">
+                    <label for="car" class="question2" id="vehiclelab">Vehicle:</label>
+                    <input type="text" class="question2" id="car">
+                    <div class="but">
+                        <button class="infosend" id="sendinfo1">Sign up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form" id="greeting">
+            <h1>Thank you for applying!</h1>
+            <h3>With our loyalty programe you get:</h3>
+            <ul>
+                <li>priority access to upgrades</li>
+                <li>exclusive events and experiences</li>
+                <li>dedicated customer support</li>
+            </ul>
+            <a href="./main_page.html">Back to the main page</a>
+        </div>
+    </div>
+    <script src="application.js"></script>
+    <script src="./server_part.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cabin&family=Fjalla+One&display=swap');
+body{
+    margin: 0;
+}
+.logo{
+    margin: 0;
+    font-family: 'Fjalla One', cursive;
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    /* -webkit-text-stroke: 0.01px rgb(255, 255, 255); */
+}
+header{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+.button{
+    width: 16%;
+    height: 30px;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+}
+.headlink{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.headlink:hover{
+    color: lightgray;
+    transition-duration: 0.4s, 0.4s;
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -999;
+}
+.discription{
+    width: 65%;
+    height: 250px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 0 auto;
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+}
+.background{
+    width: 100%;
+    height: 1890px;
+    background-color: white;
+    text-align: center;
+    margin-top: 180px;
+    padding-top: 1px;
+}
+.disc{
+    color: white;
+    font-size: 22px;
+    /* margin-left: 15px;
+    margin-right: 15px; */
+    margin: 15px;
+}
+.fdwsg{
+    width: 100%;
+    height: 253px;
+    /* background-color: red; */
+    display: flex;
+}
+.fdwinfo{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+.fdwimage{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.fdwim{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+.fdwseqinf{
+    font-size: 21px;
+}
+.saleprod{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    display: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.fd5{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.fd6{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.fdimg{
+    width: 90%;
+    z-index: 0;
+}
+.fd5:hover{
+    background: rgba(0, 0, 0, 0.8);
+    opacity: .3;
+}
+.fd6:hover{
+    background: rgba(0, 0, 0, 0.8);
+    opacity: .3;
+}
+.rdwsg{
+    width: 100%;
+    height: 254px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    margin-top: 50px;
+    flex-direction: row-reverse;
+    z-index: -3;
+}
+.rdwinfo{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(255, 255, 255); */
+}
+.rdwimage{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(0, 55, 255); */
+}
+.rdwseqinf{
+    margin: 10px;
+}
+.rdwseq1{
+    margin: 10px;
+}
+.rdwseq{
+    margin: 10px;
+}
+.rdwimg{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+.carmats{
+    width: 100%;
+    height: 314.5px;
+    background-color: rgb(255, 255, 255);
+    display: none;
+    margin-top: 30px;
+    flex-direction: row-reverse;
+    z-index: -3;
+}
+.carminfo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: rgb(255, 255, 255); */
+}
+.carmimage{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(0, 55, 255); */
+}
+.carmimg{
+    width: 50%;
+}
+.price1{
+    width: 100%;
+    text-align: center;
+}
+.pricerev{
+    width: 100%;
+    text-align: center;
+}
+.price{
+    font-size: x-large;
+}
+.matscolor{
+    width: 100%;
+    height: 20%;
+    /* background-color: aqua; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.colors{
+    width: 100%;
+    height: 30%;
+    /* background-color: blue; */
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.blackc{
+    width: 2.5%;
+    height: 80%;
+    background-color: black;
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.5);
+    margin-right: 16.4px;
+    display: none;
+}
+.blackc:hover{
+    width: 2.5%;
+    height: 80%;
+    margin-right: 11px;
+    border: 3px solid green;
+    box-shadow: none;
+}
+.blackonclick{
+    width: 2.5%;
+    height: 80%;
+    margin-right: 11px;
+    background-color: black;
+    border: 3px solid green;
+    box-shadow: none;
+}
+.beigec{
+    width: 2.5%;
+    height: 80%;    
+    background-color: beige;
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.5);
+}
+.beigec:hover{
+    width: 2.5%;
+    height: 80%;
+    border: 3px solid green;
+    box-shadow: none;
+}
+.beigeonclick{
+    width: 2.5%;
+    height: 80%;
+    background-color: beige;
+    border: 3px solid green;
+    box-shadow: none;
+    display: none;
+}
+.col{
+    margin: 0;
+}
+.carrims{
+    width: 100%;
+    height: 314.5px;
+    background-color: rgb(255, 255, 255);
+    display: none;
+    margin-top: 60px;
+    flex-direction: row;
+    z-index: -3;
+}
+.carrinfo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: rgb(255, 255, 255); */
+}
+.buttons{
+    width: 100%;
+    height: 22%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    /* background-color: aqua; */
+}
+.cartadd{
+    width: 40%;
+    height: 80%;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(0, 0, 0);
+    font-size: x-large;
+    color: white;
+    font-family: 'Cabin', cursive;
+}
+.cartadd:hover{
+    background-color: rgb(100, 100, 100);
+    cursor: pointer;
+}
+.availch{
+    width: 40%;
+    height: 80%;
+    border: 3.5px solid rgb(212, 212, 212);
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    font-size: x-large;
+    color: rgb(0, 0, 0);
+    font-family: 'Cabin', cursive;
+}
+.availch:hover{
+    background-color: rgb(212, 212, 212);
+    cursor: pointer;
+}
+.rimscolor{
+    width: 100%;
+    height: 20%;
+    /* background-color: aqua; */
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rimcolors{
+    width: 100%;
+    height: 30%;
+    /* background-color: blue; */
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.bronzec{
+    width: 2.5%;
+    height: 80%;
+    background-color: #CD7F32;
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.5);
+    margin-right: 16.4px;
+}
+.bronzec:hover{
+    width: 2.5%;
+    height: 80%;
+    margin-right: 11px;
+    border: 3px solid green;
+    box-shadow: none;
+}
+.bronzeonclick{
+    width: 2.5%;
+    height: 80%;
+    margin-right: 11px;
+    background-color: #CD7F32;
+    border: 3px solid green;
+    box-shadow: none;
+    display: none;
+}
+.silverc{
+    width: 2.5%;
+    height: 80%;
+    background-color: silver;
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.5);
+    margin-right: 16.4px;
+}
+.silverc:hover{
+    width: 2.5%;
+    height: 80%;
+    margin-right: 11px;
+    border: 3px solid green;
+    box-shadow: none;
+}
+.silveronclick{
+    width: 2.5%;
+    height: 80%;
+    margin-right: 11px;
+    background-color: silver;
+    border: 3px solid green;
+    box-shadow: none;
+    display: none;
+}
+.steerwheel{
+    width: 100%;
+    height: 314.5px;
+    background-color: rgb(255, 255, 255);
+    display: none;
+    margin-top: 60px;
+    flex-direction: row-reverse;
+    z-index: -3;
+}
+.taillight{
+    width: 100%;
+    height: 314.5px;
+    background-color: rgb(255, 255, 255);
+    display: none;
+    margin-top: 60px;
+    flex-direction: row;
+    z-index: -3;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.personalinfo{
+    width: 30%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.email{
+    width: 70%;
+    height: 33%;
+    display: flex;
+    align-items: center;
+    /* background-color: brown; */
+}
+svg{
+    margin: 3px;
+    margin-right: 8px;
+    color: white;
+}
+.phonenumber{
+    width: 70%;
+    height: 33%;
+    display: flex;
+    align-items: center;
+    /* background-color: brown; */
+}
+.adress{
+    width: 70%;
+    height: 33%;
+    display: flex;
+    align-items: center;
+    /* background-color: brown; */
+}
+.footertext{
+    color: white;
+}
+.logo1{
+    margin: 0;
+    font-family: 'Fjalla One', cursive;
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    /* -webkit-text-stroke: 0.01px rgb(255, 255, 255); */
+}
+.mail{
+    text-decoration: none;
+}
+.tuning-shop{
+    width: 100%;
+    height: 380px;
+    display: flex;
+    align-items: center;
+}
+.dropdown-goods:hover, .dropdown-goods1:hover{
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.dropdown-goods{
+    width: 36%;
+    height: 65px;
+    border-radius: 35px;
+    background-color: white;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-weight: 550;
+    margin: auto;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.dropdown-goods1{
+    width: 45%;
+    height: 80px;
+    border-radius: 35px;
+    background-color: white;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: 600;
+    margin: auto;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.tuning-shop-image{
+    width: 50%;
+    height: 100%;
+}
+.tuning-station-image{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+.tuning-shop-info{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.dol600{
+    font-weight: 600;
+}
+.loyalty-header{
+    margin-bottom: 40px;
+}
+table{
+    margin: auto;
+    width: 70%;
+    height: 270px;
+    font-size: larger;
+    margin-bottom: 50px;
+}
+th{
+    border-bottom: 2px solid gray;
+}
+.loyal{
+    border-right: 2px solid gray;
+    min-width: 50%;
+}
+.extra-loyal{
+    max-width: 50%;
+}
+.final{
+    width: 65%;
+    height: 80px;
+    font-size: larger;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin-top: 40px;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+/* .slider{
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+}
+.middle{
+    position: relative;
+    /* top: 10%;
+    left: 25%; */
+    /* transform: translate(-50%, -50%); 
+}*/
+/* .navigation{
+
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+.bar{
+    height: 8px;
+    width: 40px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: #ddd;
+    opacity: .7;
+    border-radius: 10px;
+    transition: all .4s ease;
+}
+.bar:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+input[name='r']{
+    position: absolute;
+    visibility: hidden;
+}
+.slides{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+.slide{
+    width: 25%;
+    transition: all .6 ease;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+#r2:checked ~ .s1{
+    margin-left: -25%;
+}
+#r3:checked ~ .s1{
+    margin-left: -50%;
+}
+#r4:checked ~ .s1{
+    margin-left: -75%;
+} */

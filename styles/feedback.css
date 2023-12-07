@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 50, 0.8), rgba(0, 0, 50, 0.8)), url(./feedback_background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-background{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+.form-background1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+.form-background2{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+.form-background3{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+.gratitude{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.gratitude_text{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: large;
+}
+.firstcheck{
+    width: 100%;
+    height: 7%;
+    display: flex;
+}
+.purchasing{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    width: 60%;
+    height: 40%;
+    background-color: rgb(255, 0, 0);
+    display: flex;
+    flex-direction: column;
+}
+input[type=checkbox]{
+    margin-right: 4px;
+}
+input[type=radio]{
+    cursor: pointer;
+}
+input[type=text]{
+    width: 60%;
+    height: 7%;
+    outline: none;
+    border: none;
+    border-radius: 9px;
+    margin-top: 20px;
+    padding-left: 9px;
+    font-size: large;
+}
+button{
+    width: 32%;
+    height: 10%;
+    margin-top: 30px;
+    border-radius: 18px;
+    border: none;
+    cursor: pointer;
+    font-size: x-large;
+    background-color: white;
+}
+.table-design{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    width: 80%;
+}
+.dark{
+    background-color: rgb(0, 0, 0, 0.48);
+    padding-top: 5px;
+}
+tr, th{
+    width: 16.5%;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 8px;
+}
+.assessing{
+    border-bottom: 1px solid white;
+}
+textarea{
+    width: 31%;
+    height: 27%;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    font-size: large;
+    padding: 8px;
+    padding-left: 13px;
+    padding-right: 13px;
+    opacity: .7;
+    border: 2px solid black;
+    /* border: 5px solid rgb(12, 0, 232); */
+}
+textarea:focus{
+    opacity: 1;
+    /* border: 5px solid rgb(12, 0, 232); */
+}
+.textarea-button{
+    width: 80%;
+    height: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#comments3{
+    width: 35%;
+    height: 75%;
+    opacity: 1;
+}
+.comment{
+    margin-top: 14px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    color: rgb(194, 194, 194);
+}
+.sendfeedbut{
+    width: 20%;
+}
+.sendfeedbut1{
+    width: 30%;
+    height: 40%;
+    /* background: linear-gradient(rgba(0, 0, 50, 0.8), rgba(0, 0, 50, 0.8));
+    color: white; */
+}
