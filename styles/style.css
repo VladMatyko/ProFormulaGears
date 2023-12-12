@@ -13,13 +13,46 @@ body{
     .logo1{
         margin-left: 80px;
     }
-    /* .rdwinfo{
-        width: 40%;
-    } */
+    .fdwsg{
+        width: 100%;
+        height: 350px;
+        /* background-color: red; */
+        display: flex;
+    }
+    .fdwinfo{
+        font-size: larger;
+        text-align: center;
+    }
+    .rdwsg{
+        width: 100%;
+        height: 350px;
+        /* background-color: red; */
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .rdwinfo{
+        font-size: larger;
+        text-align: center;
+    }
 }
 @media (max-width: 1600px) and (min-width: 1000px){
     .logo1{
         margin-left: 40px;
+    }
+    .fdwsg{
+        width: 100%;
+        height: 253px;
+        /* background-color: red; */
+        display: flex;
+    }
+    .rdwsg{
+        width: 100%;
+        height: 254px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        margin-top: 50px;
+        flex-direction: row-reverse;
+        z-index: -3;
     }
 }
 @media (min-width: 1000px) {
@@ -105,16 +138,15 @@ body{
         margin-right: 15px; */
         margin: 0px 20px 0px 20px;
     }
-    .fdwsg{
-        width: 100%;
-        height: 253px;
-        /* background-color: red; */
-        display: flex;
-    }
     .fdwinfo{
         width: 50%;
         height: 100%;
+        margin-right: 15px;
+        margin-left: 15px;
         background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         text-align: center;
     }
     .fdwimage{
@@ -130,7 +162,7 @@ body{
         border-radius: 10px;
     }
     .fdwseqinf{
-        font-size: 21px;
+        font-size: 19px;
     }
     .saleprod{
         width: 100%;
@@ -168,18 +200,12 @@ body{
         background: rgba(0, 0, 0, 0.8);
         opacity: .3;
     }
-    .rdwsg{
-        width: 100%;
-        height: 254px;
-        background-color: rgb(255, 255, 255);
-        display: flex;
-        margin-top: 50px;
-        flex-direction: row-reverse;
-        z-index: -3;
-    }
     .rdwinfo{
         width: 50%;
         height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         text-align: center;
         /* background-color: rgb(255, 255, 255); */
     }
@@ -192,6 +218,7 @@ body{
     }
     .rdwseqinf{
         margin: 10px;
+        font-size: 19px;
     }
     .rdwseq1{
         margin: 10px;
@@ -220,6 +247,7 @@ body{
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        text-align: center;
         /* background-color: rgb(255, 255, 255); */
     }
     .carmimage{
@@ -322,6 +350,7 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        text-align: center;
         /* background-color: rgb(255, 255, 255); */
     }
     .buttons{
@@ -439,6 +468,7 @@ body{
         background-color: rgb(255, 255, 255);
         display: none;
         margin-top: 60px;
+        margin-bottom: 60px;
         flex-direction: row;
         z-index: -3;
     }
@@ -508,7 +538,7 @@ body{
         box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
     }
     .dropdown-goods{
-        width: 36%;
+        width: 39%;
         height: 65px;
         border-radius: 35px;
         background-color: white;
@@ -542,6 +572,8 @@ body{
     .tuning-shop-image{
         width: 50%;
         height: 100%;
+        display: flex;
+        justify-content: center;
     }
     .tuning-station-image{
         max-width: 100%;
@@ -554,6 +586,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
     .dol600{
         font-weight: 600;
