@@ -20,11 +20,11 @@ let bronzecarrimclick = document.getElementById("bronzecolorclick");
 let silvercarrimclick = document.getElementById("silvercolorclick");
 let carrimimage = document.getElementById("carrimim")
 
+
 fdw_dropdown.onclick = function(){
     if(fdw_drop == 0){
         fdw_dropdown.style.backgroundColor = 'rgb(225, 225, 225)';
         document.getElementById('fdproducts').style.display = 'flex';
-        document.getElementById('background').style.height = '3500px';
         fdw_drop +=1;
         console.log(fdw_drop)
     }
@@ -40,7 +40,6 @@ rdw_dropdown.onclick = function(){
     if(rdw_drop == 0){
         rdw_dropdown.backgroundColor = 'rgb(225, 225, 225)';
         document.getElementById('rdproducts').style.display = 'flex';
-        document.getElementById('background').style.height = '3500px';
         rdw_drop +=1;
     }
     else if(rdw_drop==1){
@@ -57,7 +56,6 @@ tuning_shop_goods.onclick = function(){
         document.getElementById('carrims').style.display = 'flex';
         document.getElementById('steeringwheel').style.display = 'flex';
         document.getElementById('taillight').style.display = 'flex';
-        document.getElementById('background').style.height = '3500px';
         tuning_drop +=1;
     }
     else if(tuning_drop==1){
@@ -65,7 +63,6 @@ tuning_shop_goods.onclick = function(){
         document.getElementById('carrims').style.display = 'none';
         document.getElementById('steeringwheel').style.display = 'none';
         document.getElementById('taillight').style.display = 'none';
-        document.getElementById('background').style.height = '1890px';
         tuning_shop_goods.style.backgroundColor = 'white';
         tuning_drop = 0;
     }
