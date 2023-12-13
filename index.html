@@ -44,9 +44,39 @@
             <div class="dropdown-goods" id="fdw-dropdown">
                 See FDW sequential gearboxes
             </div>
-            <div class="saleprod" id="fdproducts">
-                <div class="fd5"><img src="./images_videos/FD5.png" alt="" class="fdimg"><h1>FD5</h1></div>
-                <div class="fd6"><img src="./images_videos/FD8.png" alt="" class='fdimg'><h1>FD6</h1></div>
+            <div class="saleprod" id="fd5roduct">
+                <div class="fd5"><img src="./images_videos/FD5.png" alt="" class="fdimg"></div>
+                <div class="fdinfo">
+                    <h1>FD5 – 5 speed front wheel drive transmission</h1>
+                    <p>
+                        <span>Number of speeds</span>: 5<br>
+                        <span>Gear positions</span>: R-0-1-2-3-4-5<br>
+                        <span>Weight</span>: 45,5 Nm<br>
+                        <span>Gear wheel width</span>: 13,5mm or 17mm<br>
+                        <span>Price</span>: 12 600€<br>
+                    </p>
+                    <div class="buttons">
+                        <button onclick="cartAdding" class="cartadd">Add to cart</button>
+                        <button onclick="availabilityCheck" class="availch">Availability in store</button>
+                    </div>
+                </div>
+            </div>
+            <div class="saleprod" id="fd6roduct">
+                <div class="fdinfo">
+                    <h1>FD6 – 6 speed front wheel drive transmission</h1>
+                    <p>
+                        <span>Number of speeds</span>: 6<br>
+                        <span>Gear positions</span>: R-0-1-2-3-4-5-6<br>
+                        <span>Weight</span>: 46 Nm<br>
+                        <span>Gear wheel width</span>: 13,5mm or 17mm<br>
+                        <span>Price</span>: 13 100€<br>
+                    </p>
+                    <div class="buttons">
+                        <button onclick="cartAdding" class="cartadd">Add to cart</button>
+                        <button onclick="availabilityCheck" class="availch">Availability in store</button>
+                    </div>
+                </div>
+                <div class="fd6"><img src="./images_videos/FD8.png" alt="" class='fdimg'></div>
             </div>
             <div class="rdwsg">
                 <div class="rdwinfo">
@@ -62,9 +92,39 @@
             <div class="dropdown-goods" id="rdw-dropdown">
                 See RDW sequential gearboxes
             </div>
-            <div class="saleprod" id="rdproducts">
-                <div class="fd5"><img src="./images_videos/RD6.jpg" alt="" class="fdimg"><h1>RD5</h1></div>
-                <div class="fd6"><img src="./images_videos/RD6.jpg" alt="" class='fdimg'><h1>RD6</h1></div>
+            <div class="saleprod" id="rd5product">
+                <div class="fd5"><img src="./images_videos/RD6.jpg" alt="" class="fdimg"></div>
+                <div class="fdinfo">
+                    <h1>RD5 – 5 Speed rear wheel drive transmission</h1>
+                    <p>
+                        <span>Number of speeds</span>: 5<br>
+                        <span>Gear positions</span>: R-0-1-2-3-4-5<br>
+                        <span>Weight</span>: 30 Nm<br>
+                        <span>Gear wheel width</span>: 17mm<br>
+                        <span>Price</span>: 8 600€<br>
+                    </p>
+                    <div class="buttons">
+                        <button onclick="cartAdding" class="cartadd">Add to cart</button>
+                        <button onclick="availabilityCheck" class="availch">Availability in store</button>
+                    </div>
+                </div>
+            </div>
+            <div class="saleprod" id="rd6product">
+                <div class="fdinfo">
+                    <h1>RD6 – 6 Speed rear wheel drive transmission</h1>
+                    <p>
+                        <span>Number of speeds</span>: 6<br>
+                        <span>Gear positions</span>: R-0-1-2-3-4-5-6<br>
+                        <span>Weight</span>: 35 Nm<br>
+                        <span>Gear wheel width</span>: 17mm<br>
+                        <span>Price</span>: 9 600€<br>
+                    </p>
+                    <div class="buttons">
+                        <button onclick="cartAdding" class="cartadd">Add to cart</button>
+                        <button onclick="availabilityCheck" class="availch">Availability in store</button>
+                    </div>
+                </div>
+                <div class="fd6"><img src="./images_videos/RD6.jpg" alt="" class='fdimg'></div>
             </div>
             <h1 id="cartunst">Our car tuning services</h1>
             <div class="tuning-shop">
@@ -169,7 +229,7 @@
                 <tr>
                     <th class="loyal">As a loyal customer you get:</th>
                     <th>As an extra loyal customer you get<br>
-                    (after 10 years and 40000$ purchases):</th>
+                    (from 10000$/year):</th>
                 </tr>
                 <tr>
                     <td class="loyal">✓ priority access to upgrades​</td>

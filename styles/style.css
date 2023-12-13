@@ -34,6 +34,14 @@ body{
         font-size: larger;
         text-align: center;
     }
+    .cartadd{
+        width: 380px;
+        height: 60px;
+    }
+    .availch{
+        width: 380px;
+        height: 60px;
+    }
 }
 @media (max-width: 1600px) and (min-width: 1000px){
     .logo1{
@@ -53,6 +61,14 @@ body{
         margin-top: 50px;
         flex-direction: row-reverse;
         z-index: -3;
+    }
+    .cartadd{
+        width: 240px;
+        height: 55px;
+    }
+    .availch{
+        width: 240px;
+        height: 55px;
     }
 }
 @media (min-width: 1000px) {
@@ -159,7 +175,6 @@ body{
     .fdwim{
         max-width: 100%;
         max-height: 100%;
-        border-radius: 10px;
     }
     .fdwseqinf{
         font-size: 19px;
@@ -177,28 +192,32 @@ body{
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
+    }
+    .fdinfo{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+    }
+    .fdinfo p{
+        font-size: large;
+        text-align: justify;
+    }
+    .fdinfo span{
+        font-weight: bolder;
     }
     .fd6{
         width: 50%;
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
-    }
-    .fdimg{
-        max-width: 90%;
-        z-index: 0;
-    }
-    .fd5:hover{
-        background: rgba(0, 0, 0, 0.8);
-        opacity: .3;
-    }
-    .fd6:hover{
-        background: rgba(0, 0, 0, 0.8);
-        opacity: .3;
     }
     .rdwinfo{
         width: 50%;
@@ -236,7 +255,7 @@ body{
         height: 314.5px;
         background-color: rgb(255, 255, 255);
         display: none;
-        margin-top: 30px;
+        margin-top: 60px;
         flex-direction: row-reverse;
         z-index: -3;
     }
@@ -259,7 +278,8 @@ body{
         /* background-color: rgb(0, 55, 255); */
     }
     .carmimg{
-        max-height: 50%;
+        max-width: 100%;
+        max-height: 100%;
     }
     .price1{
         width: 100%;
@@ -340,7 +360,7 @@ body{
         height: 314.5px;
         background-color: rgb(255, 255, 255);
         display: none;
-        margin-top: 60px;
+        margin-top: 90px;
         flex-direction: row;
         z-index: -3;
     }
@@ -362,32 +382,28 @@ body{
         /* background-color: aqua; */
     }
     .cartadd{
-        width: 40%;
-        height: 80%;
         border: none;
         border-radius: 25px;
         background-color: rgb(0, 0, 0);
         font-size: x-large;
         color: white;
         font-family: 'Cabin', cursive;
+        cursor: pointer;
     }
     .cartadd:hover{
         background-color: rgb(100, 100, 100);
-        cursor: pointer;
     }
     .availch{
-        width: 40%;
-        height: 80%;
         border: 3.5px solid rgb(212, 212, 212);
         border-radius: 25px;
         background-color: rgb(255, 255, 255);
         font-size: x-large;
         color: rgb(0, 0, 0);
         font-family: 'Cabin', cursive;
+        cursor: pointer;
     }
     .availch:hover{
         background-color: rgb(212, 212, 212);
-        cursor: pointer;
     }
     .rimscolor{
         width: 100%;
@@ -458,7 +474,7 @@ body{
         height: 314.5px;
         background-color: rgb(255, 255, 255);
         display: none;
-        margin-top: 60px;
+        margin-top: 90px;
         flex-direction: row-reverse;
         z-index: -3;
     }
@@ -467,7 +483,7 @@ body{
         height: 314.5px;
         background-color: rgb(255, 255, 255);
         display: none;
-        margin-top: 60px;
+        margin-top: 90px;
         margin-bottom: 60px;
         flex-direction: row;
         z-index: -3;
@@ -552,6 +568,7 @@ body{
         margin-top: 30px;
         margin-bottom: 30px;
         cursor: pointer;
+        user-select: none;
     }
     .dropdown-goods1{
         width: 45%;
@@ -568,6 +585,7 @@ body{
         margin: auto;
         margin-top: 30px;
         cursor: pointer;
+        user-select: none;
     }
     .tuning-shop-image{
         width: 50%;

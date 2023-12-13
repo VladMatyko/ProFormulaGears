@@ -23,13 +23,14 @@ let carrimimage = document.getElementById("carrimim")
 
 fdw_dropdown.onclick = function(){
     if(fdw_drop == 0){
-        fdw_dropdown.style.backgroundColor = 'rgb(225, 225, 225)';
-        document.getElementById('fdproducts').style.display = 'flex';
+        document.getElementById('fd5roduct').style.display = 'flex';
+        document.getElementById('fd6roduct').style.display = 'flex';
         fdw_drop +=1;
         console.log(fdw_drop)
     }
     else if(fdw_drop==1){
-        document.getElementById('fdproducts').style.display = 'none';
+        document.getElementById('fd5roduct').style.display = 'none';
+        document.getElementById('fd6roduct').style.display = 'none';
         fdw_dropdown.style.backgroundColor = 'white';
         fdw_drop = 0;
         console.log(fdw_drop)
@@ -39,11 +40,13 @@ fdw_dropdown.onclick = function(){
 rdw_dropdown.onclick = function(){
     if(rdw_drop == 0){
         rdw_dropdown.backgroundColor = 'rgb(225, 225, 225)';
-        document.getElementById('rdproducts').style.display = 'flex';
+        document.getElementById('rd5product').style.display = 'flex';
+        document.getElementById('rd6product').style.display = 'flex';
         rdw_drop +=1;
     }
     else if(rdw_drop==1){
-        document.getElementById('rdproducts').style.display = 'none';
+        document.getElementById('rd5product').style.display = 'none';
+        document.getElementById('rd6product').style.display = 'none';
         rdw_dropdown.style.backgroundColor = 'white';
         rdw_drop = 0;
     }
