@@ -130,10 +130,10 @@ body{
         
         z-index: 3;
         width: 890px;
-        height: 300px;
+        height: 320px;
         background: rgba(0, 0, 0, 0.8);
         margin: 0 auto;
-        margin-top: 180px;
+        margin-top: 150px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -141,6 +141,10 @@ body{
         border-radius: 30px;
     }
     .discription h1{
+        color: white;
+        margin: 0;
+    }
+    .discription h2{
         color: white;
         margin: 0;
     }
